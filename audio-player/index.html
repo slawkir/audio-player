@@ -13,27 +13,29 @@
 <body>
   <div class="container">
     <div class="container-bg">
-      <div class="player">
-        <div class="player__bg">
-          <h2 class="album"></h2>
+      
+    </div>
+    <div class="player">
+      <div class="player__bg">
+        <h2 class="album"></h2>
+      </div>
+      <div class="player__control">
+        <div class="wrapper">
+          <button class="play-pause play">
+            <!-- <img src="./assets/svg/play.png" alt=""> -->
+          </button>
+          <div class="info-track">
+            <h2 class="singer">Linkin Park</h2>
+            <h3 class="track">Castle of Glass</h3>
+          </div>
+          <div class="prev-next">
+            <button class="prev"></button>
+            <button class="next"></button>
+          </div>
         </div>
-        <div class="player__control">
-          <div class="wrapper">
-            <div class="play-pause play">
-              <!-- <img src="./assets/svg/play.png" alt=""> -->
-            </div>
-            <div class="info-track">
-              <h2 class="singer">Beyonce</h2>
-              <h3 class="track">Don`t Hurt Yourself</h3>
-            </div>
-            <div class="prev-next">
-              <div class="prev"></div>
-              <div class="next"></div>
-            </div>
-          </div>
-          <div class="wrapper">
-            <input type="range">
-          </div>
+        <div class="wrapper">
+          <audio src="./assets/audio/Linkin_Park_-_Castle_of_Glass.mp3" controls></audio>
+          <input type="range">
         </div>
       </div>
     </div>
