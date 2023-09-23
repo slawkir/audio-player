@@ -19,7 +19,7 @@
   background-image: url('../img/linkin.jpg');
   background-size: cover;
   background-position: center center;
-  filter: blur(5px);
+  filter: blur(10px);
   z-index: 100;
 }
 .player {
@@ -49,7 +49,8 @@
   justify-content: center;
   flex-direction: column;
   padding-top: 25px;
-  gap: 35px;
+  padding-bottom: 15px;
+  gap: 15px;
   background:  linear-gradient(to right, lightsteelblue, #fff);
 }
 .wrapper {
@@ -81,7 +82,7 @@
 .singer {
   font-size: 32px;
   line-height: 35px;
-  color: yellow;
+  color: darkorange;
 }
 .track {
   font-size: 25px;
@@ -110,3 +111,37 @@
   background-size: cover;
   border: transparent;
 }
+.wrapper-audio {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+input[type="range"] {
+  width: 250px;
+  appearance: none;
+  height: 5px;
+  background: #000;
+  border-radius: 10px/100%;
+}
+.current-time {
+  width: 250px;
+  display: flex;
+  justify-content: flex-start;
+}
+.track-duration {
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  color: darkorange;
+}
+ #timerange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: darkorange;
+  width: 7px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }

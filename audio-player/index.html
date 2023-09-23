@@ -33,9 +33,13 @@
             <button class="next"></button>
           </div>
         </div>
-        <div class="wrapper">
-          <audio src="./assets/audio/Linkin_Park_-_Castle_of_Glass.mp3" controls></audio>
-          <input type="range">
+        <div class="wrapper-audio">
+          <audio src="./assets/audio/Linkin_Park_-_Castle_of_Glass.mp3" class="audio"></audio>
+          <div class="track-duration">3:53</div>
+          <input type="range" id="timerange" min="0" max="1" step="0.05" value="0">
+          <div class="current-time">0:00</div>
+          
+          
         </div>
       </div>
     </div>
