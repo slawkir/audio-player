@@ -205,6 +205,7 @@ audio.addEventListener('timeupdate', function () { // вынести в updateDa
 
 prevBtn.addEventListener('click', prevTrack);
 nextBtn.addEventListener('click', nextTrack);
+audio.addEventListener('ended', nextTrack);
 
 timeRange.addEventListener('click', scrub);
 let mousedown = false;
