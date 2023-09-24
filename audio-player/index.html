@@ -10,40 +10,62 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <div class="container-bg">
-      
-    </div>
-    <div class="player">
-      <div class="player__bg">
-        <h2 class="album">Living Things</h2>
+<main>
+  <main>
+    <div class="container">
+      <div class="container-bg">
+        
       </div>
-      <div class="player__control">
-        <div class="wrapper">
-          <button class="play-pause play">
-            <!-- <img src="./assets/svg/play.png" alt=""> -->
-          </button>
-          <div class="info-track">
-            <h2 class="singer">Linkin Park</h2>
-            <h3 class="composition">Castle of Glass</h3>
+      <div class="player">
+        <div class="player__bg">
+          <h2 class="album">Living Things</h2>
+        </div>
+        <div class="player__control">
+          <div class="wrapper">
+            <button class="play-pause play">
+              <!-- <img src="./assets/svg/play.png" alt=""> -->
+            </button>
+            <div class="info-track">
+              <h2 class="singer">Linkin Park</h2>
+              <h3 class="composition">Castle of Glass</h3>
+            </div>
+            <div class="prev-next">
+              <button class="prev"></button>
+              <button class="next"></button>
+            </div>
           </div>
-          <div class="prev-next">
-            <button class="prev"></button>
-            <button class="next"></button>
+          <div class="wrapper-audio">
+            <audio src="" class="audio"></audio>
+            <div class="track-duration">3:25</div>
+            <input type="range" id="timerange" min="0" max="1" step="0.005" value="0">
+            <div class="current-time">0:00</div>
+            
+            
           </div>
         </div>
-        <div class="wrapper-audio">
-          <audio src="" class="audio"></audio>
-          <div class="track-duration">3:25</div>
-          <input type="range" id="timerange" min="0" max="1" step="0.005" value="0">
-          <div class="current-time">0:00</div>
-          
-          
-        </div>
       </div>
     </div>
-  </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://github.com/slawkir">
+            <img src="./assets/svg/github-logo.svg" alt="github">
+          </a>
+        </li>
+        <li>
+          2023
+        </li>
+        <li>
+          <a href="https://rs.school/js-stage0/">
+            <img src="./assets/svg/rs_school_js.svg" alt=" rolling scoupe school">
+          </a>
+         
+        </li>
+      </ul>
+    </nav>
+  </footer>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>

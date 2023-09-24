@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+li {
+  list-style-type: none;
+}
 .container {
   display: flex;
   align-items: center;
@@ -95,7 +98,7 @@
   /* background: linear-gradient(to right, lightsteelblue, #fff); */
 }
 .singer {
-  font-size: 1.2vw;
+  font-size: 1.4rem;
   line-height: 35px;
   color: darkorange;
   width: 220px;
@@ -167,4 +170,29 @@ input[type="range"] {
   height: 20px;
   border-radius: 5px;
   cursor: pointer;
+ }
+
+ footer {
+  width: 100%;
+  height: 90px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  position: absolute;
+  /* bottom: 0; */
+  top: calc(100vh - 90px);
+  z-index: 300;
+ }
+ ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+ li {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 10px;
+ }
+ li img {
+  width: 100px;
  }
