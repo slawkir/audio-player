@@ -175,8 +175,10 @@ function prevTrack() {
   }
   track = arrSongs[i];
   audio.src = track.audioFile;
+  togglePlayPause();
   audio.play();
   playTrack(track);
+  
 }
 function nextTrack() { 
   if (i === arrSongs.length - 1) {
@@ -186,6 +188,7 @@ function nextTrack() {
   }
   track = arrSongs[i];
   audio.src = track.audioFile;
+  togglePlayPause();
   audio.play();
   playTrack(track);
 }
@@ -200,9 +203,16 @@ audio.addEventListener('timeupdate', function () { // вынести в updateDa
   
 });
 
-timeRange.addEventListener('click', scrub);
 prevBtn.addEventListener('click', prevTrack);
 nextBtn.addEventListener('click', nextTrack);
+
+timeRange.addEventListener('click', scrub);
+let mousedown = false;
+timeRange.addEventListener('mousemove', (e) => { 
+  mousedown && scrub(e);
+  });
+timeRange.addEventListener('mousedown', () => mousedown = true);
+timeRange.addEventListener('mouseup', () => mousedown = false);
 
 
 
